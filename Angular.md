@@ -29,16 +29,40 @@ A: You need to alter your security settings so that Powershell can execute scrip
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 ```
 Follow the prompts and be sure you know what you're doing.
+
+#### Q: How do I see a list of npm packages installed globally?
+A:
+```bash
+$ npm list -g --depth 0
+```
+`--depth 0` displays the top-level packages only and not all the sub-packages.
+#### Q: Where is the global `node_modules` directory stored?
+A: The commands `npm root` and `npm root -g` will tell you the effective installation directory of your npm packages.
+##### In Windows:
+`C:\Users\admin\AppData\Roaming\npm\node_modules`
+##### In macOS:
+`/usr/local/lib/node_modules`
+
+
 ## Set Up Your Project
 [Back to Top](#top)
 [Angular.io: Set up the local environment](https://angular.io/guide/setup-local)
 ### Install the Angular CLI
 The Angular CLI is a suite of command line tools that assist you in creating an Angular application and its components. Assuming you have Node.js installed, go into a GitBash prompt (or Powershell) and type:
 ```bash
-$ npm install -g @angular/cli
+$ npm install -g @angular/cli@latest
 ```
 
+### Starting an Angular Project
+```bash
+$ sudo ng new my-project
+```
+Using admin privileges to create the project is important. The very first time you create an Angular project could take a long time (e.g. 10 minutes).
 
+### Adding Angular Material to a Project
+```bash
+$ ng add @angular/material
+```
 ## The Simplest Angular Component
 [Back to Top](#top)
 
