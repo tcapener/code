@@ -50,7 +50,7 @@ A: The commands `npm root` and `npm root -g` will tell you the effective install
 ### Install the Angular CLI
 The Angular CLI is a suite of command line tools that assist you in creating an Angular application and its components. Assuming you have Node.js installed, go into a GitBash prompt (or Powershell) and type:
 ```bash
-$ npm install -g @angular/cli@latest
+$ sudo npm install -g @angular/cli@latest
 ```
 
 ### Starting an Angular Project
@@ -61,7 +61,7 @@ Using admin privileges to create the project is important. The very first time y
 
 ### Adding Angular Material to a Project
 ```bash
-$ ng add @angular/material
+$ sudo ng add @angular/material
 ```
 ## The Simplest Angular Component
 [Back to Top](#top)
