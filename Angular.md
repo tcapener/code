@@ -66,6 +66,7 @@ $ sudo ng add @angular/material
 ## Angular Components
 [Back to Top](#top)
 ### Add a New Component to a Project
+Make sure you are in your project directory. For example `code/weather`
 ```bash
 $ ng generate component weather-report
 ```
@@ -73,6 +74,15 @@ or
 ```bash
 $ ng g c weather-report
 ```
+This will create 
+```
+code/weather/src/apps/weather-report
+  |-weather-report.component.css
+  |-weather-report.component.html
+  |-weather-report.component.spec.ts
+  |-weather-report.component.ts
+```
+Inside `weather-report.component.ts` will be a component with the selector `app-weather-report`.
 ### The Anatomy of Angular Components
 This root component uses an inline template and inline CSS.
 ```ts {.line-numbers}

@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WeatherReportComponent } from './weather-report/weather-report.component';
+import { TickerItemComponent } from './ticker-item/ticker-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WeatherReportComponent
+    WeatherReportComponent,
+    TickerItemComponent
   ],
   imports: [
     BrowserModule,
